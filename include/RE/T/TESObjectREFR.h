@@ -437,6 +437,7 @@ namespace RE
 		bool                                    IsPersistent() const;
 		float                                   IsPointDeepUnderWater(float a_zPos, TESObjectCELL* a_cell) const;
 		bool                                    IsPointSubmergedMoreThan(const NiPoint3& a_pos, TESObjectCELL* a_cell, float a_waterLevel) const;
+		void                                    MoveRefToNewSpace(TESObjectCELL* a_interior, TESWorldSpace* a_world);
 		void                                    MoveTo(TESObjectREFR* a_target);
 		bool                                    MoveToNode(TESObjectREFR* a_target, const BSFixedString& a_nodeName);
 		bool                                    MoveToNode(TESObjectREFR* a_target, NiAVObject* a_node);
